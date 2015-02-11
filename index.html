@@ -1,0 +1,55 @@
+<!doctype html>
+<html>
+	<head>
+		<script src="microscope.js"></script>
+		<style>
+			html {
+				margin: 0; padding: 0;
+			}
+
+			body {
+				background: black;
+				color: white;
+			}
+
+			abs {
+				position: absolute;
+				left: 10%;
+				right: 10%;
+				top: 10%;
+				bottom: 10%;
+				background: rgba(119, 255, 238, 0.5);
+			}
+
+			events {
+				background: black;
+				padding: 4px;
+				pointer-events: none;
+			}
+
+			events > event {
+				display: block;
+				pointer-events: none;
+			}
+
+			events > event > name {
+				display: inline-block;
+				background: #002;
+				pointer-events: none;				
+			}
+
+			events > event > bubbled {
+				display: inline-block;
+				pointer-events: none;				
+			}
+		</style>
+	</head>
+	<body>
+		<abs>
+			<abs>
+				<abs>
+				</abs>
+			</abs>
+		</abs>
+	</body>
+</html>
